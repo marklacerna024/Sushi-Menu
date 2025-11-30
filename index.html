@@ -30,7 +30,7 @@
     }
 
     .menu-card {
-        background: white;
+        position: relative; /* needed for absolute label positioning */
         border-radius: 12px;
         overflow: hidden;
         margin-bottom: 30px;
@@ -43,12 +43,17 @@
     }
 
     .label {
-        text-align: center;
-        padding: 10px 0;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0,0,0,0.6); /* semi-transparent background */
+        color: #fff;
+        padding: 10px 20px;
         font-size: 24px;
         font-weight: bold;
-        background: #eee;
-        border-top: 1px solid #ddd;
+        border-radius: 6px;
+        text-align: center;
     }
 
     footer {
@@ -68,9 +73,10 @@
 
 <div class="container">
 
-    <!-- FRONT IMAGE / ASUSHI -->
+    <!-- ASUSHI -->
     <div class="menu-card">
-        <img src="asushi.jpg" alt="ASUSHI Front Image">
+        <img src="asushi.jpg" alt="ASUSHI">
+        <div class="label">🍣 Sushi Buffet Menu</div>
     </div>
 
     <!-- FALL -->
