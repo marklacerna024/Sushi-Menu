@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta-name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makiramen Main Menu</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: #fafafa;
+    }
+
+    .header {
+        text-align: center;
+        padding: 25px 15px;
+        background: #ff4455;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .menu-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 25px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .menu-item {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: 0.25s ease;
+    }
+
+    .menu-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .menu-name {
+        padding: 14px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background: #fff;
+        color: #333;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">Makiramen Main Menu</div>
+
+<div class="menu-container">
+
+    <div class="menu-item">
+        <img src="BentoBox.jpg" alt="Bento Box">
+        <div class="menu-name">Bento Box</div>
+    </div>
+
+    <div class="menu-item">
+        <img src="Katsu1.jpg" alt="Katsu 1">
+        <div class="menu-name">Katsu 1</div>
+    </div>
+
+    <div class="menu-item">
+        <img src="Katsu2.jpg" alt="Katsu 2">
+        <div class="menu-name">Katsu 2</div>
+    </div>
+
+    <div class="menu-item">
+        <img src="Ramen.jpg" alt="Ramen">
+        <div class="menu-name">Ramen</div>
+    </div>
+
+    <div class="menu-item">
+        <img src="SushiRoll.jpg" alt="Sushi Roll">
+        <div class="menu-name">Sushi Roll</div>
+    </div>
+
+    <div class="menu-item">
+        <img src="SushiSet.jpg" alt="Sushi Set">
+        <div class="menu-name">Sushi Set</div>
+    </div>
+
+</div>
+
+</body>
+</html>
